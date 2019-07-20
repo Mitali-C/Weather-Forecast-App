@@ -1,0 +1,23 @@
+.datesParent{
+  width: 560px;
+  display: flex;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+.activeDate{
+  color: white;
+  padding: 10px;
+  border-bottom: 2px solid #FFA500;
+}
+
+.nonActiveDate{
+  color: #FFA500;
+  padding: 10px;
+}
+
+.nonActiveDate:hover{
+  color: white;
+}

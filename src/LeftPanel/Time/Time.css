@@ -1,0 +1,25 @@
+.timeParent{
+    display: flex;
+    flex-direction: column;
+    top: 15%;
+    position: relative;
+    margin-left: 20px;
+}
+
+.activeTime{
+    color: white;
+    font-size: 26px;
+    padding-bottom: 5px;
+}
+
+.nonActiveTime{
+    color: white;
+    opacity: 0.5;
+    font-size: 20px;
+    padding-bottom: 5px;
+    transition: font-size 0.2s ease-in-out;
+}
+
+.nonActiveTime:hover{
+    font-size: 26px;
+}

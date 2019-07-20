@@ -1,0 +1,55 @@
+.heading {
+  font-size: 32px;
+  color: white;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.input, .searchBtn {
+  padding: 5px;
+  border: none;
+  margin-top: 20px;
+}
+
+.input{
+  border-radius: 5px 0px 0px 5px;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.searchBtn{
+  border-radius: 0px 5px 5px 0px;
+  background-color: #FFA500;
+  color: white;
+}
+
+.currentWeatherHeading{
+  font-size: 24px;
+  letter-spacing: 5px;
+  color: rgba(255, 255, 255, 0.5);
+  padding-bottom: 10px;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+  margin-top: 20px;
+}
+
+.rightPanelParent{
+  text-align: center;
+  width: 350px;
+}
+
+.data{
+  padding-top: 10px;
+  font-size: 24px;
+  color: #FFA500;
+  opacity: 0.5;
+  padding-bottom: 10px;
+  text-align: left;
+}
+
+.dataLabel{
+  font-size: 20px;
+  color: white;
+  opacity: 0.5;
+  padding-bottom: 20px;
+  text-align: left;
+}

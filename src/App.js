@@ -1,26 +1,41 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import LeftPanel from './LeftPanel';
+import RightPanel from './RightPanel';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends React.Component{
+  constructor(props){
+    super(props);
+    this.state = {
+      city: 'Pune',
+      country: 'IN',
+    }
+  }
+
+setCity = (cityName, countryName) => {
+  this.setState({
+    city: cityName,
+    country: countryName,
+  }, () => {console.log('set country', this.state.country);});
+  
+}
+
+  render(){
+    return (
+      <div className="parent">
+        <div className='leftPanel'>
+          <LeftPanel 
+            city = {this.state.city}
+            country = {this.state.country}
+            changeLoadingState = {this.changeLoadingState}
+            />
+        </div>
+        <div className='rightPanel'>
+          <RightPanel returnCity = {this.setCity} />
+        </div>
+      </div>
+    );
+  }
 }
 
 export default App;
