@@ -53,3 +53,31 @@
   padding-bottom: 20px;
   text-align: left;
 }
+
+.overlay{
+  width: 1034px;
+  height: 836px;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  left: 323px;
+  top: 34px;
+}
+
+.dialogBox{
+  width: 270px;
+  height: 100px;
+  background-color: white;
+  position: absolute;
+  left: 34%;
+  top: 35%;
+  padding: 10px;
+}
+
+.closeBtn{
+  color: #FFA500;
+  background-color: white;
+  border: none;
+  float: right;
+  margin-top: 29px;
+  font-size: 16px;
+}
